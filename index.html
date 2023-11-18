@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="music_player">
+        <h2 class="player">music player</h2>
+        <div class="img_container">
+          <img src="./TUM_PREM_HO.jpg" alt="" />
+        </div>
+        <h1 class="title">Tum prem ho</h1>
+        <h3 class="artist">Aishwarya Anand</h3>
+        <audio id="music">
+          <source  src="./TUM_PREM_HO.mp3" type="audio/mpeg" />
+        </audio>
+        <!-- <div class="time">
+          <div class="start">
+            <p id="start">0:00</p>
+          </div>
+          <div class="end">
+            <p id="end">0:00</p>
+          </div>
+        </div> -->
+        <input type="range" value="0" class="length" />
+        <div class="controles">
+          <i class="fa-solid fa-backward" id="previous"></i>
+        <div onclick="playPause()"><i class="fa-solid fa-play" id="play"></i></div> 
+          <i class="fa-solid fa-forward" id="next"></i>
+        </div>
+      </div>
+    </header>
+  </body>
+  <script src="script.js"></script>
+</html>
